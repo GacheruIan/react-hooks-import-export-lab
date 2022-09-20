@@ -1,11 +1,13 @@
 import React from "react";
 
-function Home() {
+function Home(user) {
   return (
     <div id="home">
       <h1>
-        {username} is a Web Developer from {city}
+        {user.username} is a Web Developer from {user.city}
       </h1>
     </div>
   );
 }
+
+export default Home
